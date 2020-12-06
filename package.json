@@ -12,7 +12,7 @@
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
     "nodemon": "^2.0.6",
-    "objectId": "^3.2.1"
+    "objectid": "^3.2.1"
   },
  "devDependencies": {},
   "scripts": {
