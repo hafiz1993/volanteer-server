@@ -18,7 +18,9 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 const port = 3001
 
-
+app.get('/', (req, res) =>{
+    res.send('working')
+})
 
 
 
@@ -41,9 +43,7 @@ client.connect(err => {
   
 //   })
  
-app.get('/', (req, res) =>{
-    res.send('working')
-} )
+
 
 
 app.post('/adminLogin', (req,res)=>{ // ----------------------------------- Admin login--------
