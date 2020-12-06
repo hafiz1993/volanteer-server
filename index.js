@@ -38,7 +38,7 @@ client.connect(err => {
 //     })
   
 //   })
-
+ // "devDependencies": {},
 
 app.post('/adminLogin', (req,res)=>{ // ----------------------------------- Admin login--------
     const data = req.body;
@@ -135,4 +135,4 @@ app.delete('/deleteMyEvent/:id', (req, res) => { // ----------------------------
 });
 
 
-app.listen(port)
+app.listen( process.env.PORT || port)
