@@ -18,6 +18,10 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 const port = 3001
 
+app.get('/', (req, res) =>{
+    res.send('working')
+} )
+
 
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -38,7 +42,7 @@ client.connect(err => {
 //     })
   
 //   })
- // "devDependencies": {},
+ 
 
 app.post('/adminLogin', (req,res)=>{ // ----------------------------------- Admin login--------
     const data = req.body;
